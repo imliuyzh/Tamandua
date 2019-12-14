@@ -1,4 +1,4 @@
-<img src="img/icon.png" width="380px">
+<img src="img/icon.png" width="370px">
 
 # Tamandua
 This program will notify the students in the University of California, Irvine (UCI) when the classes they want is open.
