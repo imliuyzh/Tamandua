@@ -17,4 +17,5 @@ In the University of California, Irvine, Anteaters are the official mascot repre
 - Alex Thornton (Without his ICS 32 class, I cannot formally step into the world of programming)
 - Richard Pattis (Without his ICS 33 class, I cannot gain a solid exposure on various programming concepts)
 
+<br>
 <img src="img/uci_seal.jpg" width="70px">
