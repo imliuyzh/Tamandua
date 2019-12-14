@@ -11,4 +11,10 @@ There is also another reason behind this project's motivation. Most applications
 ## Naming
 In the University of California, Irvine, Anteaters are the official mascot representing the school itself. If one can search the meaning of "Tamandua," he or she can find that "Tamandua" is the formal name for "Anteater." In order to echo the academic background of this project and to avoid others' tendency to name their projects with prefix such as "Zot" or "Ant," I decided to use "Tamandua" as the name for my work.
 
+## Credit
+- The logo is based on an icon made by Freepik from www.flaticon.com
+- UCI seal comes from https://brand.uci.edu/applying-the-brand/digital/
+- Alex Thornton (Without his ICS 32 class, I cannot formally step into the world of programming)
+- Richard Pattis (Without his ICS 33 class, I cannot gain a solid exposure on various programming concepts)
+
 <img src="img/uci_seal.jpg" width="70px">
