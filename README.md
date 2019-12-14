@@ -4,4 +4,4 @@
 Notify students in the University of California, Irvine (UCI) when the classes they want is open.
 
 
-<img src="img/uci_seal.png">
+<img src="img/uci_seal.jpg">
