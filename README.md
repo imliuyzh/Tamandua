@@ -14,7 +14,7 @@ In the University of California, Irvine, Anteaters are the official mascot repre
 ## License
 This project is licensed under the GNU License - see the LICENSE.md file for details.
 
-## Credit
+## Acknowledgments
 - The logo is based on an icon made by Freepik from www.flaticon.com
 - UCI seal comes from https://brand.uci.edu/applying-the-brand/digital/
 - Alex Thornton (Without his ICS 32 class, I cannot formally step into the world of programming)
