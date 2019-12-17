@@ -11,8 +11,7 @@ def execute_program() -> None:
     interface and prompt the users to enter their class selection."""
     user_interface = ui.UserInterface()
     data_manager = dm.DataManager()
-    command_processor = cp.CommandProcessor(
-        user_interface, data_manager)
+    command_processor = cp.CommandProcessor(user_interface, data_manager)
     command_processor.emerge()
 
 
