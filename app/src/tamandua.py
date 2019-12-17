@@ -3,18 +3,9 @@ should run the program here)."""
 
 import user_interface as ui
 import data_manager as dm
-import command_processor as cp
-
-
-def execute_program() -> None:
-    """Initialize all the variables that are necessary to run the user
-    interface and prompt the users to enter their class selection."""
-    user_interface = ui.UserInterface()
-    data_manager = dm.DataManager()
-    command_processor = cp.CommandProcessor(user_interface, data_manager)
-    command_processor.emerge()
+import input_processor as ip
 
 
 
 if __name__ == "__main__":
-    execute_program()
+    ip.InputProcessor(ui.UserInterface(), dm.DataManager()).execute_program()
