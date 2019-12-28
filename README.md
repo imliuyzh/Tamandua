@@ -11,6 +11,54 @@ There is also another reason behind this project's motivation. Most applications
 ## Naming
 In the University of California, Irvine, Anteaters are the official mascot representing the school itself. If one can search the meaning of "Tamandua," he or she can find that "Tamandua" is the formal name for "Anteater." In order to echo the academic background of this project and to avoid others' tendency to name their projects with prefix such as "Zot" or "Ant," I decided to use "Tamandua" as the name for my work.
 
+## Script in Actions
+```
+       _.---._
+    .\/'       "--`\/\/           888888    db    8b    d8    db    88b 88 8888b.  88   88    db
+  ./                 \ \            88     dPYb   88b  d88   dPYb   88Yb88  8I  Yb 88   88   dPYb
+ /./\  )______   \__  \ \           88    dP__Yb  88YbdP88  dP__Yb  88 Y88  8I  dY Y8   8P  dP__Yb
+./  / /\ \   | \ \  \  \_\          88   dP""""Yb 88 YY 88 dP""""Yb 88  Y8 8888Y"  `YbodP' dP""""Yb
+   / /  \ \  | |\ \  \ 
+
+[Fri Dec 27 21:49:16 2019] Enter the year term (e.g. 2016 FALL): 2020 WINTER
+[Fri Dec 27 21:49:25 2019] Type the course code of the classes you want (separate them by space): 35590 35591
+[Fri Dec 27 21:49:31 2019] Starting a request now. Press Ctrl+C to terminate the program.
+[Fri Dec 27 21:49:31 2019] Stop the process for a moment to protect the WebSOC server.
+[Fri Dec 27 21:49:35 2019] Starting a request now. Press Ctrl+C to terminate the program.
+[Fri Dec 27 21:49:35 2019] Stop the process for a moment to protect the WebSOC server.
+[Fri Dec 27 21:49:42 2019] Starting a request now. Press Ctrl+C to terminate the program.
+[Fri Dec 27 21:49:42 2019] Stop the process for a moment to protect the WebSOC server.
+[Fri Dec 27 21:49:47 2019] Starting a request now. Press Ctrl+C to terminate the program.
+[Fri Dec 27 21:49:47 2019] Stop the process for a moment to protect the WebSOC server.
+[Fri Dec 27 21:49:52 2019] Starting a request now. Press Ctrl+C to terminate the program.
+[Fri Dec 27 21:49:53 2019] Stop the process for a moment to protect the WebSOC server.
+[Fri Dec 27 21:49:55 2019] Starting a request now. Press Ctrl+C to terminate the program.
+[Fri Dec 27 21:49:55 2019] Stop the process for a moment to protect the WebSOC server.
+[Fri Dec 27 21:49:59 2019] Starting a request now. Press Ctrl+C to terminate the program.
+[Fri Dec 27 21:49:59 2019] Stop the process for a moment to protect the WebSOC server.
+[Fri Dec 27 21:50:07 2019] Program exits now. Thank you for using Tamandua.
+```
+
+<br>
+
+```
+       _.---._
+    .\/'       "--`\/\/           888888    db    8b    d8    db    88b 88 8888b.  88   88    db
+  ./                 \ \            88     dPYb   88b  d88   dPYb   88Yb88  8I  Yb 88   88   dPYb
+ /./\  )______   \__  \ \           88    dP__Yb  88YbdP88  dP__Yb  88 Y88  8I  dY Y8   8P  dP__Yb
+./  / /\ \   | \ \  \  \_\          88   dP""""Yb 88 YY 88 dP""""Yb 88  Y8 8888Y"  `YbodP' dP""""Yb
+   / /  \ \  | |\ \  \ 
+
+[Fri Dec 27 21:51:58 2019] Enter the year term (e.g. 2016 FALL): 2020 WINTER
+[Fri Dec 27 21:52:01 2019] Type the course code of the classes you want (separate them by space): 21520
+[Fri Dec 27 21:52:03 2019] Starting a request now. Press Ctrl+C to terminate the program.
+[Fri Dec 27 21:52:03 2019] 21520 IS AVAILABLE. REGISTER IT RIGHT NOW!
+[Fri Dec 27 21:52:03 2019] Stop the process for a moment to protect the WebSOC server.
+[Fri Dec 27 21:52:06 2019] Starting a request now. Press Ctrl+C to terminate the program.
+[Fri Dec 27 21:52:07 2019] Stop the process for a moment to protect the WebSOC server.
+[Fri Dec 27 21:52:14 2019] Program exits now. Thank you for using Tamandua.
+```
+
 ## Disclaimer
 You can definitely modify this program to suit your needs. However, please **DO NOT** abuse this program. All consequences resulted from such actions will be on your own. This script **DOES NOT** enroll you into the classes you want, but instead telling you when you can enroll them.
 
