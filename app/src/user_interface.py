@@ -10,16 +10,17 @@ class UserInterface:
 
     def emerge(self) -> None:
         """Show the welcome wizard messages when the program starts."""
-        print("W E L C O M E  T O  T A M A N D U A!")
-        print("-----------------------------------------")
-        print("Type in the information as the prompt tells you will help " \
-            + "you to set up the program. Also, please BE CAREFUL DO NOT " \
-            + "TYPE ANYTHING EXTRA SUCH AS SPACES ALONG WITH YOUR INPUT.\n")
-        print("DISCLAIMER: You can definitely modify this script to suit " \
-            + "your needs. However, please DO NOT abuse this program. All " \
-            + "consequences resulted from such actions will be handled on " \
-            + "your own. This script DOES NOT enroll you into the classes " \
-            + "you want, but instead telling you when you can enroll them.\n")
+        print("""       _.---._""")
+        print("""    .\/'       "--`\/\/           888888    db    8b    """ \
+              + """d8    db    88b 88 8888b.  88   88    db""")
+        print("""  ./                 \ \            88     dPYb   88b  """ \
+              + "d88   dPYb   88Yb88  8I  Yb 88   88   dPYb")
+        print(""" /./\  )______   \__  \ \           88    dP__Yb  88YbdP88""" \
+              + """  dP__Yb  88 Y88  8I  dY Y8   8P  dP__Yb""")
+        print("""""""""./  / /\ \   | \ \  \  \_\          88   """"""""" \
+              + """""""""dP\"\"\"\"Yb 88 YY 88 dP\"\"\"\"Yb 88  Y8 """"""""" \
+              + """""""""8888Y\"  `YbodP' dP\"\"\"\"Yb""""""""")
+        print("""   / /  \ \  | |\ \  \ """ + "\n")
 
     def prompt_year_term(self) -> str:
         """Ask the users on which quarter does the classes belong to."""
@@ -33,10 +34,6 @@ class UserInterface:
                                 user_input) is not None
             except AssertionError:
                 print(f"[{time.asctime()}] ERROR: Please check your input.")
-            except KeyboardInterrupt:
-                print(f"[{time.asctime()}] Program exits now. Thank you for " \
-                    + "using Tamandua.")
-                keep_going = False
             else:
                 keep_going = False
 
@@ -49,16 +46,12 @@ class UserInterface:
         while keep_going:
             try:
                 course_set = set(input(f"[{time.asctime()}] Type the course " \
-                    + " code of the classes you want (separate them by " \
+                    + "code of the classes you want (separate them by " \
                     + "space): ").split())
                 for course_code in course_set:
                     assert course_code.isnumeric() == True
             except AssertionError:
                 print(f"[{time.asctime()}] Check your input. Please try again.")
-            except KeyboardInterrupt:
-                print(f"[{time.asctime()}] Program exits now. Thank you for " \
-                    + "using Tamandua.")
-                keep_going = False
             else:
                 return course_set
 
