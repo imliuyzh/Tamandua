@@ -11,6 +11,9 @@ There is also another reason behind this project's motivation. Most applications
 ## Naming
 In the University of California, Irvine, Anteaters are the official mascot representing the school itself. If one can search the meaning of "Tamandua," he or she can find that "Tamandua" is the formal name for "Anteater." In order to echo the academic background of this project and to avoid others' tendency to name their projects with prefix such as "Zot" or "Ant," I decided to use "Tamandua" as the name for my work.
 
+## Disclaimer
+You can definitely modify this program to suit your needs. However, please DO NOT abuse this program. All consequences resulted from such actions will be on your own. This script DOES NOT enroll you into the classes you want, but instead telling you when you can enroll them.
+
 ## License
 This project is licensed under the GNU License - see the LICENSE.md file for details.
 
