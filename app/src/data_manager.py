@@ -1,11 +1,11 @@
 """This module contains the core mechanism for Tamandua. In other words, it
 shows how Tamandua really works in the background."""
 
-import time
-import random
 import urllib.error
 import urllib.request
 import user_interface
+from time import asctime, sleep
+from random import uniform
 
 
 class DataManager:
@@ -36,7 +36,7 @@ class DataManager:
         request = self._build_request()
         while keep_going:
             user_interface.UserInterface.show_message(
-                f"[{time.asctime()}] Starting a request now. Press Ctrl+C " \
+                f"[{asctime()}] Starting a request now. Press Ctrl+C " \
                     + "to terminate the program.")
             try:
                 with urllib.request.urlopen(request) as response:
@@ -45,19 +45,19 @@ class DataManager:
                                              .splitlines())
             except urllib.error.HTTPError as error_object:
                 user_interface.UserInterface.show_message(
-                    f"[{time.asctime()}] Server returns error code: " \
-                        + f"{error_object.code}")
+                    f"[{asctime()}] Server returns error code: " \
+                        + error_object.code
                 keep_going = False
             except urllib.error.URLError as error_object:
                 user_interface.UserInterface.show_message(
-                    f"[{time.asctime()}] A network error occurs: " \
-                        + f"{error_object.reason}")
+                    f"[{asctime()}] A network error occurs: " \
+                        + error_object.reason
                 keep_going = False
             finally:
                 user_interface.UserInterface.show_message(
-                    f"[{time.asctime()}] Stop the process for a moment to " \
+                    f"[{asctime()}] Stop the process for a moment to " \
                         + "protect the WebSOC server.")
-                time.sleep(random.uniform(2, 9))
+                sleep(uniform(2, 9))
 
     def _build_request(self) -> urllib.request.Request:
         """Create a Request object so that the urlopen() function can use the
@@ -82,10 +82,11 @@ class DataManager:
             if current_line.startswith(course_tuple) == True and \
                    self._class_notification_status[current_line[:5]] == False:
 
+                current_class = current_line[:5]
                 if current_line.endswith("OPEN") == True:
                     user_interface.UserInterface.show_message(
-                        f"[{time.asctime()}] {current_line[:5]} IS AVAILABLE. " \
+                        f"[{asctime()}] {current_class} IS AVAILABLE. " \
                             + "REGISTER IT RIGHT NOW!")
-                    self._class_notification_status[current_line[:5]] = True
+                    self._class_notification_status[current_class] = True
                 else:
-                    self._class_notification_status[current_line[:5]] = False
+                    self._class_notification_status[current_class] = False
