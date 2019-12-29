@@ -11,6 +11,11 @@ There is also another reason behind this project's motivation. Most applications
 ## Naming
 In the University of California, Irvine, Anteaters are the official mascot representing the school itself. If one can search the meaning of "Tamandua," he or she can find that "Tamandua" is the formal name for "Anteater." In order to echo the academic background of this project and to avoid others' tendency to name their projects with prefix such as "Zot" or "Ant," I decided to use "Tamandua" as the name for my work.
 
+## Dependency
++ [Python](https://www.python.org/) (v3.6+)
++ [playsound](https://github.com/TaylorSMarks/playsound)
++ [PySide2](https://www.qt.io/qt-for-python) (Future Development)
+
 ## Example Usage
 ```
        _.---._
