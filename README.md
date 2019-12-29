@@ -11,7 +11,7 @@ There is also another reason behind this project's motivation. Most applications
 ## Naming
 In the University of California, Irvine, Anteaters are the official mascot representing the school itself. If one can search the meaning of "Tamandua," he or she can find that "Tamandua" is the formal name for "Anteater." In order to echo the academic background of this project and to avoid others' tendency to name their projects with prefix such as "Zot" or "Ant," I decided to use "Tamandua" as the name for my work.
 
-## Script in Actions
+## Example Usage
 ```
        _.---._
     .\/'       "--`\/\/           888888    db    8b    d8    db    88b 88 8888b.  88   88    db
@@ -38,9 +38,6 @@ In the University of California, Irvine, Anteaters are the official mascot repre
 [Fri Dec 27 21:49:59 2019] Stop the process for a moment to protect the WebSOC server.
 [Fri Dec 27 21:50:07 2019] Program exits now. Thank you for using Tamandua.
 ```
-
-<br>
-
 ```
        _.---._
     .\/'       "--`\/\/           888888    db    8b    d8    db    88b 88 8888b.  88   88    db
