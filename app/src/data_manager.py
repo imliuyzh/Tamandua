@@ -3,9 +3,9 @@ shows how Tamandua really works in the background."""
 
 import urllib.error
 import urllib.request
-import user_interface
-from time import asctime, sleep
 from random import uniform
+from time import asctime, sleep
+import user_interface
 
 
 class DataManager:
@@ -46,12 +46,12 @@ class DataManager:
             except urllib.error.HTTPError as error_object:
                 user_interface.UserInterface.show_message(
                     f"[{asctime()}] Server returns error code: " \
-                        + error_object.code
+                        + error_object.code)
                 keep_going = False
             except urllib.error.URLError as error_object:
                 user_interface.UserInterface.show_message(
                     f"[{asctime()}] A network error occurs: " \
-                        + error_object.reason
+                        + error_object.reason)
                 keep_going = False
             finally:
                 user_interface.UserInterface.show_message(

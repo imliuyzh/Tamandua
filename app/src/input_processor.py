@@ -1,8 +1,8 @@
 """This module is responsible for handling inputs from the users and modifying
 the data in the DataManager object."""
 
-import user_interface as ui
 from time import asctime
+import user_interface as ui
 
 
 class InputProcessor:

@@ -31,7 +31,7 @@ class UserInterface:
                 user_input = input(f"[{asctime()}] Enter the year term " \
                     + "(e.g. 2016 FALL): ").upper()
                 assert match(r'^(\d{4}) (FALL|WINTER|SPRING){1}$',
-                                user_input) is not None
+                             user_input) is not None
             except AssertionError:
                 print(f"[{asctime()}] ERROR: Please check your input.")
             else:
