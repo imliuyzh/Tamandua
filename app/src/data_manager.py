@@ -5,6 +5,7 @@ import urllib.error
 import urllib.request
 from random import uniform
 from time import asctime, sleep
+from playsound import playsound
 import user_interface
 
 
@@ -15,9 +16,7 @@ class DataManager:
     def __init__(self):
         """Construct an instance of a DataManager object by initializing
         necessary instance variables."""
-        self._course_set = None
-        self._year_term = None
-        self._class_notification_status = None
+        self._course_set, self._year_term = None, None
 
     def set_year(self, year_term: str) -> None:
         """Make clear that which quarter does the users want to look for."""
@@ -26,8 +25,6 @@ class DataManager:
     def set_courses(self, course_set: set) -> None:
         """Get the set of courses that the users want to look for."""
         self._course_set = course_set
-        self._class_notification_status = \
-            {course: False for course in course_set}
 
     def check_availbility(self) -> None:
         """Initialize a connection to WebSOC in order to see if the courses in
@@ -37,7 +34,7 @@ class DataManager:
         while keep_going:
             user_interface.UserInterface.show_message(
                 f"[{asctime()}] Starting a request now. Press Ctrl+C " \
-                    + "to terminate the program.")
+                    + "to terminate the program (May take a while).")
             try:
                 with urllib.request.urlopen(request) as response:
                     self._process_class_info(response.read()
@@ -45,33 +42,34 @@ class DataManager:
                                              .splitlines())
             except urllib.error.HTTPError as error_object:
                 user_interface.UserInterface.show_message(
-                    f"[{asctime()}] Server returns error code: " \
-                        + error_object.code)
+                    f"[{asctime()}] Server returns error code " \
+                        + f"({error_object.code}). Program exits now.")
                 keep_going = False
             except urllib.error.URLError as error_object:
                 user_interface.UserInterface.show_message(
-                    f"[{asctime()}] A network error occurs: " \
-                        + error_object.reason)
+                    f"[{asctime()}] A network error occurs " \
+                        + f"({error_object.reason}). Program exits now.")
                 keep_going = False
-            finally:
+            else:
+                pause_time = uniform(10, 30)
                 user_interface.UserInterface.show_message(
-                    f"[{asctime()}] Stop the process for a moment to " \
-                        + "protect the WebSOC server.")
-                sleep(uniform(2, 9))
+                    f"[{asctime()}] Halt the process for {pause_time:.2f} " \
+                        + "seconds to protect the WebSOC server.")
+                sleep(pause_time)
 
     def _build_request(self) -> urllib.request.Request:
         """Create a Request object so that the urlopen() function can use the
         POST method."""
-        parameters = bytes("Submit=Display+Text+Results&" \
-            + f"YearTerm={self._year_term}&Breadth=ANY&" \
-            + "Dept=+ALL&Division=ANY&ClassType=ALL&FullCourses=ANY&" \
-            + "CancelledCourses=Exclude&" \
-            + f"CourseCodes={'+'.join(self._course_set)}", 'utf-8')
+        parameters = bytes("Submit=Display+Text+Results&"
+                           + f"YearTerm={self._year_term}&Breadth=ANY&"
+                           + "Dept=+ALL&Division=ANY&ClassType=ALL&"
+                           + "FullCourses=ANY&CancelledCourses=Exclude&"
+                           + f"CourseCodes={'+'.join(self._course_set)}", 'utf-8')
         request = urllib.request.Request("https://www.reg.uci.edu/perl/WebSoc",
                                          data=parameters)
-        request.add_header("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) " \
-            + "AppleWebKit/537.36 (KHTML, like Gecko) " \
-            + "Chrome/79.0.3945.88 Safari/537.36 Edg/79.0.309.56")
+        request.add_header("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) "
+                           + "AppleWebKit/537.36 (KHTML, like Gecko) "
+                           + "Chrome/79.0.3945.88 Safari/537.36 Edg/79.0.309.56")
         return request
 
     def _process_class_info(self, data: [str]) -> None:
@@ -80,14 +78,13 @@ class DataManager:
         course_tuple = tuple(self._course_set)
         for line in data:
             current_line = line.strip()
-            if current_line.startswith(course_tuple) == True and \
-                   self._class_notification_status[current_line[:5]] == False:
-
+            if current_line.startswith(course_tuple) == True:
                 current_class = current_line[:5]
+                user_interface.UserInterface.show_message(
+                    f"[{asctime()}] Checking the status of {current_class}...")
+
                 if current_line.endswith("OPEN") == True:
                     user_interface.UserInterface.show_message(
                         f"[{asctime()}] {current_class} IS AVAILABLE. " \
                             + "REGISTER IT RIGHT NOW!")
-                    self._class_notification_status[current_class] = True
-                else:
-                    self._class_notification_status[current_class] = False
+                    playsound("..\\..\\media\\beep.mp3")
