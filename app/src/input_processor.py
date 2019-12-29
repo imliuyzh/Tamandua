@@ -1,8 +1,8 @@
 """This module is responsible for handling inputs from the users and modifying
 the data in the DataManager object."""
 
-import time
 import user_interface as ui
+from time import asctime
 
 
 class InputProcessor:
@@ -27,5 +27,5 @@ class InputProcessor:
             self._data_manager.set_courses(course_set)
             self._data_manager.check_availbility()
         except KeyboardInterrupt:
-            ui.UserInterface.show_message(f"[{time.asctime()}] " \
+            ui.UserInterface.show_message(f"[{asctime()}] " \
                 + "Program exits now. Thank you for using Tamandua.")
