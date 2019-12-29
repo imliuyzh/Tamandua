@@ -1,7 +1,7 @@
 """This module shows the user interface of this program."""
 
-import re
-import time
+from re import match
+from time import asctime
 
 
 class UserInterface:
@@ -28,12 +28,12 @@ class UserInterface:
         keep_going = True
         while keep_going:
             try:
-                user_input = input(f"[{time.asctime()}] Enter the year term " \
+                user_input = input(f"[{asctime()}] Enter the year term " \
                     + "(e.g. 2016 FALL): ").upper()
-                assert re.match(r'^(\d{4}) (FALL|WINTER|SPRING){1}$',
+                assert match(r'^(\d{4}) (FALL|WINTER|SPRING){1}$',
                                 user_input) is not None
             except AssertionError:
-                print(f"[{time.asctime()}] ERROR: Please check your input.")
+                print(f"[{asctime()}] ERROR: Please check your input.")
             else:
                 keep_going = False
 
@@ -45,13 +45,13 @@ class UserInterface:
         keep_going = True
         while keep_going:
             try:
-                course_set = set(input(f"[{time.asctime()}] Type the course " \
+                course_set = set(input(f"[{asctime()}] Type the course " \
                     + "code of the classes you want (separate them by " \
                     + "space): ").split())
                 for course_code in course_set:
                     assert course_code.isnumeric() == True
             except AssertionError:
-                print(f"[{time.asctime()}] Check your input. Please try again.")
+                print(f"[{asctime()}] Check your input. Please try again.")
             else:
                 return course_set
 
