@@ -11,8 +11,8 @@ class InputProcessor:
 
     def __init__(self, user_interface: 'UserInterface',
                  data_manager: 'DataManager'):
-        """Construct an InputProcessor object by initializing all instance
-        variables that are necessary to run."""
+        """Construct an instance of the InputProcessor class by initializing
+        all instance variables that are necessary to run."""
         self._user_interface = user_interface
         self._data_manager = data_manager
 

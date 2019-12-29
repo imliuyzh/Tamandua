@@ -13,8 +13,8 @@ class DataManager:
     user inputs that are necessary for this program to work."""
 
     def __init__(self):
-        """Construct a DataManager object by initializing necessary
-        instance variables."""
+        """Construct an instance of a DataManager object by initializing
+        necessary instance variables."""
         self._course_set = None
         self._year_term = None
         self._class_notification_status = None
@@ -24,7 +24,7 @@ class DataManager:
         self._year_term = year_term
 
     def set_courses(self, course_set: set) -> None:
-        '''Get the set of courses that the users want to look for.'''
+        """Get the set of courses that the users want to look for."""
         self._course_set = course_set
         self._class_notification_status = \
             {course: False for course in course_set}
@@ -75,7 +75,8 @@ class DataManager:
         return request
 
     def _process_class_info(self, data: [str]) -> None:
-        """Check which classes are open and notify the users."""
+        """Scrape the website to check which classes are open and notify
+        the users."""
         course_tuple = tuple(self._course_set)
         for line in data:
             current_line = line.strip()

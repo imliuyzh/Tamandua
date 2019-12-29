@@ -2,7 +2,7 @@
 same information again and again."""
 
 
-# Specify which quarter do you want to look for. Please follow this format:
+# Specify the quarter that you want to look for. Please follow this format:
 # "2020 SPRING" (including quotation marks)
 YEAR_TERM = None
 

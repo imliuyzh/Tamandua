@@ -57,5 +57,5 @@ class UserInterface:
 
     @staticmethod
     def show_message(message: str) -> None:
-        '''Let other classes print their messages in the user interface.'''
+        """Let other classes print their messages in the user interface."""
         print(message)
