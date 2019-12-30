@@ -1,12 +1,12 @@
 <img src="img/logo.png" width="370px">
 
 # Tamandua
-This program will notify the students in the University of California, Irvine (UCI) when the classes they want is open.
+This program will notify the student users in the University of California, Irvine (UCI) when the classes they want are open.
 
 ## Background
-Enrolling classes that the students want is often a difficult task in the University of California, Irvine. This is largely due to the server's inability to handle a large amount of requests. Numerous tools attempt to register for classes have been created. However, it has shown that usually programs like these can be abused. Recently, there are reports indicate that some students will use these tools to keep making requests that ultimately overload the server, rendering the service incapable of adding students' classes. Consequently, class registration is not the focus of this project. Instead, this project will focus on class registration **NOTIFICATION**. It will tell the students to get the classes they want once they are open. The method of registering the classes will be students' choice. However, I recommend that students should use WebReg as the primary choice of performing this task because it is the legal and official way as specified by the registrar.
+Enrolling classes that students want is often a difficult task in the University of California, Irvine. This is largely due to the server's inability to handle a large amount of requests. Numerous tools attempting to register for classes have been created. However, it has shown that usually programs like these can be abused. Recently, there are reports indicate that some students will use these tools to keep making requests that ultimately overloads the server, rendering the server incapable of adding students' classes. Consequently, class registration is not the focus of this project. Instead, this project will focus on class registration **NOTIFICATION**. It will tell the students to get the classes they want once they are open. The method of registering the classes will be students' choice. However, I recommend that students should use WebReg as the primary choice of performing this task because it is the legal and official way as specified by the registrar.
 
-There is also another reason behind this project's motivation. Most applications, such as Coursicle, are mobile-focused; in other words, PC is not their target. As a result, PC users will face difficulty to automate checking class availability. This tool essentially performs the same task as Coursicle with the exception that only PC devices are supported.
+There is also another reason behind this project's motivation. Most applications, such as Coursicle, are mobile-focused; in other words, PC devices are not their target. As a result, PC users will face difficulty to automate checking class availability. This tool essentially performs the same task as Coursicle with the exception that it mainly targets on PC devices.
 
 ## Naming
 In the University of California, Irvine, Anteaters are the official mascot representing the school itself. If one can search the meaning of "Tamandua," he or she can find that "Tamandua" is the formal name for "Anteater." In order to echo the academic background of this project and to avoid others' tendency to name their projects with prefix such as "Zot" or "Ant," I decided to use "Tamandua" as the name for my work.
@@ -77,7 +77,7 @@ Since Tamandua is technically still in development, there is no installer like i
 ```
 
 ## Disclaimer
-You can definitely modify this program to suit your needs. However, please **DO NOT** abuse this program. All consequences resulted from such actions will be on your own. This script **DOES NOT** enroll you into the classes you want, but instead telling you when you can enroll them.
+You can definitely modify this program to suit your needs. However, please **DO NOT** abuse this program. All consequences resulted from such actions will be on your own. This script **DOES NOT** enroll you into the classes you want, but it instead tells you when you can enroll them.
 
 ## License
 This project is licensed under the GNU License - see the LICENSE.md file for details.
