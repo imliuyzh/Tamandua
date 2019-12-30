@@ -57,12 +57,11 @@ class InputProcessor:
     def check_course_numbers_input(data: str) -> set:
         """Check the correctness of the format for the course numbers."""
         assert match(r"\d{5}", data) is not None
-        return InputProcessor._check_course_set_input(data)
+        return InputProcessor._check_course_set_input(set(data.split()))
 
     @staticmethod
-    def _check_course_set_input(data: str) -> set:
+    def _check_course_set_input(test_set: set) -> set:
         """Check the correctness of the format for the course set."""
-        test_set = set(data.split())
         for course_code in test_set:
             assert course_code.isnumeric() == True and len(course_code) == 5
         return test_set

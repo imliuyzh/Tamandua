@@ -29,13 +29,12 @@ class UserInterface:
             try:
                 user_input = input(f"[{asctime()}] Enter the year term " \
                     + "(e.g. 2016 FALL): ").upper()
-                ip.InputProcessor.check_year_term_input(user_input)
+                year_term = ip.InputProcessor.check_year_term_input(user_input)
             except AssertionError:
                 print(f"[{asctime()}] ERROR: Please check your input.")
             else:
                 keep_going = False
-
-        return f"{user_input[0:4]}-{ip.TERM_DICT[user_input[5:]]}"
+        return year_term
 
     def prompt_course_selection(self) -> set:
         """Let the users put in the course number for classes that they want
