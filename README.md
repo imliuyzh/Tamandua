@@ -20,14 +20,14 @@ In the University of California, Irvine, Anteaters are the official mascot repre
 ### Process
 1. Download Python from the link above.
 2. Create a Python virtual environment with these tutorials:
-    + [https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/](https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/) (Stop at the "pip install pygame" section)
+    + [https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/](https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/) (Stop at the ```pip install pygame``` section)
     + [https://docs.python.org/3/tutorial/venv.html](https://docs.python.org/3/tutorial/venv.html) (A bit more complicated to follow)
-3. Open the "Scripts" folder in the command line and run the "activate" script
-    + In Windows, you just type "activate"
-    + In Linux, you type "source bin/activate"
+3. Open the ```Scripts``` folder in the command line and run the ```activate``` script
+    + In Windows, you just type ```activate```
+    + In Linux (Tested on Ubuntu), you type ```source bin/activate```
     + Sorry, I have no plan to support macOS
-4. Type "pip install playsound"
-5. Open the "src" folder in the command line and type "python3 tamandua.py"
+4. Type ```pip install playsound```
+5. Open the ```src``` folder in the command line and type ```python3 tamandua.py```
 
 ## Example Usage
 ```
