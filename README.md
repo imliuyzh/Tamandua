@@ -80,9 +80,10 @@ You can definitely modify this program to suit your needs. However, please **DO 
 ## License
 This project is licensed under the GNU License - see the LICENSE.md file for details.
 
-## Acknowledgments
+## Credits
 - The logo is based on an icon made by Freepik from www.flaticon.com
 - UCI seal comes from https://brand.uci.edu/applying-the-brand/digital/
+- The "beep" sound effect comes from https://freesound.org/people/AlaskaRobotics/sounds/221087/
 - Alex Thornton (Without his ICS 32 class, I cannot formally step into the world of programming)
 - Richard Pattis (Without his ICS 33 class, I cannot gain a solid exposure on various programming concepts)
 
