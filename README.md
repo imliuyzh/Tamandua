@@ -19,7 +19,7 @@ In the University of California, Irvine, Anteaters are the official mascot repre
 
 ### Process
 1. Download Python from the link above.
-2. Create a Python virtual environment with these tutorials:
+2. Create a Python virtual environment with these tutorials and enter into the folder you just created:
     + [https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/](https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/) (Stop at the ```pip install pygame``` section)
     + [https://docs.python.org/3/tutorial/venv.html](https://docs.python.org/3/tutorial/venv.html) (A bit more complicated to follow)
 3. Execute the ```activate``` script
