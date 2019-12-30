@@ -11,10 +11,23 @@ There is also another reason behind this project's motivation. Most applications
 ## Naming
 In the University of California, Irvine, Anteaters are the official mascot representing the school itself. If one can search the meaning of "Tamandua," he or she can find that "Tamandua" is the formal name for "Anteater." In order to echo the academic background of this project and to avoid others' tendency to name their projects with prefix such as "Zot" or "Ant," I decided to use "Tamandua" as the name for my work.
 
-## Dependency
+## Deployment/"Pseudo-Installation"
+### Dependency
 + [Python](https://www.python.org/) (v3.6+)
 + [playsound](https://github.com/TaylorSMarks/playsound)
 + [PySide2](https://www.qt.io/qt-for-python) (Future Development)
+
+### Process
+1. Download Python from the link above.
+2. Create a Python virtual environment with these tutorials:
+    + [https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/](https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/) (Stop at the "pip install pygame" section)
+    + [https://docs.python.org/3/tutorial/venv.html](https://docs.python.org/3/tutorial/venv.html) (A bit more complicated to follow)
+3. Open the "Scripts" folder in the command line and run the "activate" script
+    + In Windows, you just type "activate"
+    + In Linux, you type "source bin/activate"
+    + Sorry, I have no plan to support macOS
+4. Type "pip install playsound"
+5. Open the "src" folder in the command line and type "python3 tamandua.py"
 
 ## Example Usage
 ```
@@ -73,5 +86,4 @@ This project is licensed under the GNU License - see the LICENSE.md file for det
 - Alex Thornton (Without his ICS 32 class, I cannot formally step into the world of programming)
 - Richard Pattis (Without his ICS 33 class, I cannot gain a solid exposure on various programming concepts)
 
-<br>
 <img src="img/uci_seal.jpg" width="70px">
