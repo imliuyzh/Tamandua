@@ -24,7 +24,7 @@ In the University of California, Irvine, Anteaters are the official mascot repre
     + [https://docs.python.org/3/tutorial/venv.html](https://docs.python.org/3/tutorial/venv.html) (A bit more complicated to follow)
 3. Execute the ```activate``` script
     + In Windows, you just open the ```Scripts``` folder in the command line and type ```activate```
-    + In Linux (Tested on Openlab), you type ```source bin/activate```
+    + In Linux, you type ```source bin/activate```
     + Sorry, I have no plan to support macOS
 4. Type ```pip install playsound```
 5. Open the ```src``` folder in the command line and type ```python3 tamandua.py```
