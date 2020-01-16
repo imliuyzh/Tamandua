@@ -1,4 +1,3 @@
-
 <img src="img/logo.png" width="370px">
 
 # Tamandua
@@ -21,7 +20,7 @@ Since Tamandua is technically still in development, there is no installer like i
 + [PySide2](https://www.qt.io/qt-for-python) (Future Development)
 
 ### Process
-1. Download Python from the link above.
+1. Download Python from the link above
 2. Create a Python virtual environment with one of these tutorials and enter the folder you just made in the command line:
     + [https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/](https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/) (Stop at the ```pip install pygame``` section)
     + [https://docs.python.org/3/tutorial/venv.html](https://docs.python.org/3/tutorial/venv.html) (A bit more complicated to follow)
@@ -31,7 +30,7 @@ Since Tamandua is technically still in development, there is no installer like i
     + Sorry, I have no plan to support macOS
 4. Type ```pip install playsound```
 5. Open the ```src``` folder in the command line and type ```python3 tamandua.py```
-    + Note that you can type the classes you want in ```preset.py``` to avoid providing input when the program starts.
+    + Note that you can type the classes you want in ```preset.py``` to avoid providing input when the program starts
 
 ## Example Usage
 ```
