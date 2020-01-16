@@ -1,3 +1,4 @@
+
 <img src="img/logo.png" width="370px">
 
 # Tamandua
@@ -30,6 +31,7 @@ Since Tamandua is technically still in development, there is no installer like i
     + Sorry, I have no plan to support macOS
 4. Type ```pip install playsound```
 5. Open the ```src``` folder in the command line and type ```python3 tamandua.py```
+    + Note that you can type the classes you want in ```preset.py``` to avoid providing input when the program starts.
 
 ## Example Usage
 ```
