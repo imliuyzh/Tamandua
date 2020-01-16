@@ -29,8 +29,7 @@ class DataManager:
     def check_availbility(self) -> None:
         """Initialize a connection to WebSOC in order to see if the courses in
         the course set are open or not."""
-        keep_going = True
-        request = self._build_request()
+        keep_going, request = True, self._build_request()
         while keep_going:
             user_interface.UserInterface.show_message(
                 f"[{asctime()}] Starting a request now. Press Ctrl+C " \
@@ -75,7 +74,7 @@ class DataManager:
     def _process_class_info(self, data: [str]) -> None:
         """Scrape the website to check which classes are open and notify
         the users."""
-        course_tuple = tuple(self._course_set)
+        course_tuple, discovered = tuple(self._course_set), False
         for line in data:
             current_line = line.strip()
             if current_line.startswith(course_tuple) == True:
@@ -84,7 +83,10 @@ class DataManager:
                     f"[{asctime()}] Checking the status of {current_class}...")
 
                 if current_line.endswith("OPEN") == True:
+                    discovered = True
                     user_interface.UserInterface.show_message(
                         f"[{asctime()}] {current_class} IS AVAILABLE. " \
                             + "REGISTER IT RIGHT NOW!")
-                    playsound("..\\..\\media\\beep.mp3")
+                           
+        if discovered == True:
+            playsound("..\\..\\media\\beep.mp3")
