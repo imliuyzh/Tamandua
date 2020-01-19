@@ -87,6 +87,6 @@ class DataManager:
                     user_interface.UserInterface.show_message(
                         f"[{asctime()}] {current_class} IS AVAILABLE. " \
                             + "REGISTER IT RIGHT NOW!")
-                           
+
         if discovered == True:
             playsound("..\\..\\media\\beep.mp3")
