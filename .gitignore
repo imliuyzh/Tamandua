@@ -113,7 +113,10 @@ venv.bak/
 /app/Include/
 /app/Lib/
 /app/Scripts/
+/app/lib64
 pyvenv.cfg
+bin/
+share/
 
 # Spyder project settings
 .spyderproject

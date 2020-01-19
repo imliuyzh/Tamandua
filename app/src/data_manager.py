@@ -89,4 +89,4 @@ class DataManager:
                             + "REGISTER IT RIGHT NOW!")
 
         if discovered == True:
-            playsound("..\\..\\media\\beep.mp3")
+            playsound("..\\..\\media\\beep.wav")
