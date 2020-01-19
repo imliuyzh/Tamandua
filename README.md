@@ -16,7 +16,7 @@ Since Tamandua is technically still in development, there is no installer like i
 
 ### Dependency
 + [Python](https://www.python.org/) (v3.6+)
-+ [playsound](https://github.com/TaylorSMarks/playsound)
++ [Pygame]
 + [PySide2](https://www.qt.io/qt-for-python) (Future Development)
 
 ### Process
@@ -28,7 +28,7 @@ Since Tamandua is technically still in development, there is no installer like i
     + In Windows, you just open the ```Scripts``` folder in the command line and type ```activate```
     + In Linux, you type ```source bin/activate```
     + Sorry, I have no plan to support macOS
-4. Type ```pip install playsound```
+4. Type ```pip install pygame```
 5. Open the ```src``` folder in the command line and type ```python3 tamandua.py```
     + Note that you can type the classes you want in ```preset.py``` to avoid providing input when the program starts
 
