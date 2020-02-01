@@ -59,7 +59,7 @@ class UserInterface:
         print(message)
 
     @staticmethod
-    def play_sound():
+    def play_sound() -> None:
         """Play the beep sound clip using the Pygame library."""
         # Please note that I do not like to put import statements here because
         # it is categorized as a code smell. However, I need this to get rid of
