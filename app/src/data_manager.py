@@ -73,35 +73,18 @@ class DataManager:
     def _process_class_info(self, data: [str]) -> None:
         """Scrape the website to check which classes are open and notify
         the users."""
-        course_tuple, discovered = tuple(self._course_set), False
+        course_tuple, class_available = tuple(self._course_set), False
+        user_interface.UserInterface.show_message(
+            f"[{asctime()}] Checking the classes' availability...")
         for line in data:
             current_line = line.strip()
-            if current_line.startswith(course_tuple) == True:
+            if current_line.startswith(course_tuple):
                 current_class = current_line[:5]
-                user_interface.UserInterface.show_message(
-                    f"[{asctime()}] Checking the status of {current_class}...")
-
-                if current_line.endswith("OPEN") == True:
-                    discovered = True
+                if current_line.endswith("OPEN"):
+                    class_available = True
                     user_interface.UserInterface.show_message(
                         f"[{asctime()}] {current_class} IS AVAILABLE. " \
                             + "REGISTER IT RIGHT NOW!")
 
-        if discovered == True:
-            DataManager._play_sound()
-
-    @staticmethod
-    def _play_sound():
-        """Play the beep sound clip using the Pygame library."""
-        # Please note that I do not like to put import statements here because
-        # it is categorized as a code smell. However, I need this to get rid of
-        # the message in the beginning that is forced upon every developer who
-        # needs Pygame. On a side note, I am looking to replace Pygame with
-        # PySide2 in the future.
-        from os import environ
-        environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "True"
-
-        import pygame.mixer
-        pygame.mixer.init()
-        pygame.mixer.music.load("../../media/beep.wav")
-        pygame.mixer.music.play()
+        if class_available:
+            user_interface.UserInterface.play_sound()

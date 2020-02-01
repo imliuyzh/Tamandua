@@ -57,3 +57,19 @@ class UserInterface:
     def show_message(message: str) -> None:
         """Let other classes print their messages in the user interface."""
         print(message)
+
+    @staticmethod
+    def play_sound():
+        """Play the beep sound clip using the Pygame library."""
+        # Please note that I do not like to put import statements here because
+        # it is categorized as a code smell. However, I need this to get rid of
+        # the message in the beginning that is forced upon every developer who
+        # needs Pygame. On a side note, I am looking to replace Pygame with
+        # PySide2 in the future.
+        from os import environ
+        environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "True"
+
+        import pygame.mixer
+        pygame.mixer.init()
+        pygame.mixer.music.load("../../media/beep.wav")
+        pygame.mixer.music.play()
