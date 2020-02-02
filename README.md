@@ -9,7 +9,7 @@ Enrolling classes that students want is often a difficult task in the University
 There is also another reason behind this project's motivation. Most applications, such as Coursicle, are mobile-focused; in other words, PC devices are not their target. As a result, PC users will face difficulty to automate checking class availability. This tool essentially performs the same task as Coursicle with the exception that it mainly targets on PC devices.
 
 ### Naming
-In the University of California, Irvine, Anteaters are the official mascot representing the school itself. If one can search the meaning of "Tamandua," he or she can find that "Tamandua" is the formal name for "Anteater." In order to echo the academic background of this project and to avoid others' tendency to name their projects with prefix such as "Zot" or "Ant," I decided to use "Tamandua" as the name for my work.
+In the University of California, Irvine, Anteaters are the official mascot representing the school itself. If one can search the meaning of "Tamandua," he or she can find that "Tamandua" is the formal name for a type of anteater. In order to echo the academic background of this project and to avoid others' tendency to name their projects with prefix such as "Zot" or "Ant," I decided to use "Tamandua" as the name for my work.
 
 ## Deployment/"Pseudo-Installation"
 Since Tamandua is technically still in development, there is no installer like in Windows that you may feel used to (although you can package it using third-party libraries like PyInstaller). Instead, you grab the scripts and run them in a Python environment with dependencies.
