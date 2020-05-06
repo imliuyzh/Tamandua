@@ -17,7 +17,6 @@ Since Tamandua is technically still in development, there is no installer like i
 ### Dependency
 + [Python](https://www.python.org/) (v3.6+)
 + Pygame
-+ [PySide2](https://www.qt.io/qt-for-python) (Future Development)
 
 ### Process
 1. Download Python from the link above
