@@ -16,19 +16,13 @@ Since Tamandua is technically still in development, there is no installer like i
 
 ### Dependency
 + [Python](https://www.python.org/) (v3.6+)
-+ Pygame
++ [Pygame](https://www.pygame.org/news)
 
 ### Process
 1. Download Python from the link above
-2. Create a Python virtual environment with one of these tutorials and enter the folder you just made in the command line:
-    + [https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/](https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/) (Stop at the ```pip install pygame``` section)
-    + [https://docs.python.org/3/tutorial/venv.html](https://docs.python.org/3/tutorial/venv.html) (A bit more complicated to follow)
-3. Execute the ```activate``` script
-    + In Windows, you just open the ```Scripts``` folder in the command line and type ```activate```
-    + In Linux, you type ```source bin/activate```
-    + Sorry, I have no plan to support macOS
-4. Type ```pip install pygame```
-5. Open the ```src``` folder in the command line and type ```python3 tamandua.py```
+2. Follow this tutorial and enter the folder you just made in the command line:
+    + [https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/](https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/)
+3. Open the ```src``` folder in the command line and type ```python3 tamandua.py```
     + Note that you can type the classes you want in ```preset.py``` to avoid providing input when the program starts
 
 ## Example Usage
