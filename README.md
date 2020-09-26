@@ -19,11 +19,12 @@ Since Tamandua is technically still in development, there is no installer like i
 + [Pygame](https://www.pygame.org/news)
 
 ### Process
-1. Download Python from the link above
-2. Follow this tutorial and enter the folder you just made in the command line:
+1. Download Python
+2. Follow this tutorial to set up a virtual environment:
     + [https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/](https://www.ics.uci.edu/~thornton/ics32/Notes/ThirdPartyLibraries/)
 3. Open the ```src``` folder in the command line and type ```python3 tamandua.py```
-    + Note that you can type the classes you want in ```preset.py``` to avoid providing input when the program starts
+    + Note that you can list the classes you want in ```preset.py``` to avoid further typing when the program starts
+4. Press ```Ctrl+C``` in the command line if you want to terminate Tamandua
 
 ## Example Usage
 ```
