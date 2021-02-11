@@ -75,7 +75,7 @@ Since Tamandua is technically still in development, there is no installer like i
 You can modify this program to suit your needs. However, please **DO NOT** abuse this program. All consequences resulted from such actions will be on your own. This script **DOES NOT** enroll you into the classes you want, but it instead tells you when you can enroll them.
 
 ## License
-This project is licensed under the GNU License - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ## Credits
 - The logo is based on an icon made by Freepik from www.flaticon.com
