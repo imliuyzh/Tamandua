@@ -11,7 +11,7 @@ There is also another reason behind this project's motivation. Most applications
 ### Naming
 In the University of California, Irvine, Anteaters are the official mascot representing the school itself. If one can search the meaning of "Tamandua," he or she can find that "Tamandua" is the formal name for a type of anteater. In order to echo the academic background of this project and to avoid others' tendency to name their projects with a prefix such as "Zot" or "Ant," I decided to use "Tamandua" as the name for my work.
 
-## Deployment/"Pseudo-Installation"
+## Installation
 Since Tamandua is technically still in development, there is no installer like in Windows that you may feel used to (although you can package it using third-party libraries like PyInstaller). Instead, you grab the scripts and run them in a Python environment with dependencies.
 
 ### Dependency
