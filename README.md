@@ -3,6 +3,8 @@
 # Tamandua
 This program will notify the student users at the University of California, Irvine (UCI) when the classes they want are open.
 
+(Spring 2022 Update) This repository will no longer to be maintained due to graduation.
+
 ## Background
 Enrolling classes that students want is often a difficult task in the University of California, Irvine. This is largely due to the server's inability to handle a large number of requests. Numerous tools attempting to register for classes have been created. However, it has shown that usually programs like these can be abused. Recently, there are reports indicate that some students will use these tools to keep making requests that ultimately overloads the server, rendering the server incapable of adding students' classes. Consequently, class registration is not the focus of this project. Instead, this project will focus on class registration **NOTIFICATION**. It will tell the students to get the classes they want once they are open. The method of registering for the classes will be the students' choice. However, I recommend that students should use WebReg as the primary choice of performing this task because it is the legal and official way as specified by the registrar.
 
